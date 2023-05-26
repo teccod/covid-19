@@ -6,6 +6,9 @@
     <control name="" action="applyFilter" target="*" targetProperty="[CountryRegion].[H1].[CountryRegion]" location="dashboard" type="auto" controlClass="" label="CountryRegion" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
       <valueRequired>false</valueRequired>
     </control>
+    <control name="" action="applyFilter" target="*" targetProperty="[Time].[H1].[Day]" location="dashboard" type="auto" controlClass="" label="Day" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
   </widget>
   <widget name="Widget2" type="meter" subtype="textMeter" subtypeClass="" title="Confirmed" dataSource="Covid19/Confirmed.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="0" colSpanL="3" rowSpanL="4" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
     <dataProperty name="" label="" width="" align="" subtype="" style="" display="" format="" showAs="" valueColumn="false" summary="" summaryValue="" dataValue="Confirmed" targetValue="" thresholdLower="" thresholdUpper="" rangeLower="" rangeUpper="" baseValue="" override=""></dataProperty>
