@@ -43,6 +43,10 @@ ClassMethod Import(pSelectMode As %Library.Integer = {$zu(115,5)}, pFileName As 
 			for tPtr = 1:1:pHeaders { do tImporter.%Next() }
 			while tImporter.%Next() {
 				set tMe = ..%New()
+				// Добавляем условие фильтрации по свойству "population"
+				if tMe.population < pFilterPopulation {
+					continue
+				}
 				if 'pSelectMode {
 					set tMe.code = tImporter.%GetData(1)
 					set tMe.name = tImporter.%GetData(2)
